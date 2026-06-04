@@ -3,7 +3,7 @@
 
 This project is an end-to-end US stock quantitative backtesting and stock-picking script based on the **Residual Volatility** factor. It utilizes [AkShare](https://akshare.xyz/) to fetch daily US stock market data, implementing a fully automated pipeline from data acquisition and factor construction to portfolio backtesting and final stock recommendations.
 
-## 🚀 Core Features
+## Core Features
 
 * **Automated Data Fetching**: Retrieves daily closing prices for a specified US stock pool and the market benchmark (SPY) via AkShare, featuring automatic error handling and data alignment.
 * **Smart Stock Pool Filtering**: Filters out unqualified stocks based on historical trading days (>=504), absolute stock price ($5 - $150), and annualized volatility (<=80%).
@@ -12,7 +12,7 @@ This project is an end-to-end US stock quantitative backtesting and stock-pickin
 * **Monthly Backtesting**: Divides the stock pool into 5 quantiles based on factor exposure. Simulates a monthly-rebalanced, equal-weighted portfolio, generating historical Net Asset Value (NAV) and Long-Short spread curves.
 * **Intelligent Stock Recommendation**: Diagnoses the "Winner Group" that performed best over the past 12 months, and selects the Top 10 stocks within this group based on the latest factor values to provide actionable stock picks.
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 Ensure you have Python 3.9+ installed along with the following dependencies:
 
@@ -23,7 +23,7 @@ pip install numpy pandas akshare matplotlib
 
 本项目是一个完整的美股单因子量化回测与选股流程脚本。以**残差波动率（Residual Volatility）**为核心因子，利用 [AkShare](https://akshare.xyz/) 获取免费的美股日频行情数据，实现了从数据获取、因子计算、有效性检验到分组回测及最终实盘选股的端到端（End-to-End）全自动化流程。
 
-## 🚀 核心功能 (Core Features)
+## 核心功能 (Core Features)
 
 * **自动化数据源集成**：使用 AkShare 自动拉取指定美股股票池及基准（SPY）的日线收盘价，并具备多版本接口容错与自动对齐机制。
 * **智能股票池清洗**：按历史交易天数（>=504天）、绝对股价（$5 - $150）以及年化波动率（<=80%）自动剔除不合规标的。
@@ -32,7 +32,7 @@ pip install numpy pandas akshare matplotlib
 * **月频分组回测 (Monthly Backtesting)**：按因子暴露度将股票等分为 5 组（等权持仓，每月月末调仓），计算各组历史净值，并生成直观的多空净值对比曲线。
 * **智能选股推荐 (Stock Recommendation)**：诊断过去 12 个月内表现最佳的“赢家组（Winner Group）”，并在该组内按因子最新值精选 Top 10 股票，生成实盘调仓建议表。
 
-## 🛠️ 环境依赖 (Prerequisites)
+## 环境依赖 (Prerequisites)
 
 请确保你的本地环境中安装了 Python 3.9+，并安装以下依赖包：
 
