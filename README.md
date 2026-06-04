@@ -19,7 +19,6 @@ Ensure you have Python 3.9+ installed along with the following dependencies:
 ```bash
 pip install numpy pandas akshare matplotlib
 
-
 # US Stock Quant: Residual Volatility Factor Strategy
 
 本项目是一个完整的美股单因子量化回测与选股流程脚本。以**残差波动率（Residual Volatility）**为核心因子，利用 [AkShare](https://akshare.xyz/) 获取免费的美股日频行情数据，实现了从数据获取、因子计算、有效性检验到分组回测及最终实盘选股的端到端（End-to-End）全自动化流程。
